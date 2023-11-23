@@ -27,7 +27,7 @@ html, body {
     line-height: 1;
 }
 
-/* --------------------------------------------------- */
+/* Common styles ------------------------------------------------------------ */
 body {
     font-family: Mulish;
     font-size: 14px;
@@ -61,6 +61,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.tools__basket_active {
+    position: relative;
+}
+
+.tools__basket_active::after {
+    position: absolute;
+    content: url('./images/Ellipse.svg');;
+    width: 12px;
+    height: 10.88px;
+    top: -3px;
+    right: -5px;
 }
 
 .tools__svg-path {
