@@ -32,6 +32,7 @@ body {
     font-family: Mulish;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.70);
+    line-height: 18px;
 }
 
 .wrapper {
@@ -48,10 +49,103 @@ body {
     margin: 0px auto;
 }
 
+/* circle button styles -------------- */
+.circle-btn {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    color: #E03926;
+    font-weight: 600;
+    transition: color .2s;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    color: #fff;
+}
+
+.circle-btn:active {
+    color: #fff;
+}
+.circle-btn:active .circle-btn__circle {
+    stroke-width: 2px;
+}
+
+.circle-btn__circle {
+    width: 229.689px;
+    height: 229.689px;
+}
+
+.circle-btn__btn {
+    color: inherit;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: 130%;
+    white-space: nowrap;
+    background: none;
+
+    position: absolute;
+    right: 114px;
+}
+
+.circle-btn__arrow {
+    content: url('./images/btn_arrow.svg');
+    width: 100.864px;
+
+    position: absolute;
+    top: 136px;
+    right: 114px;
+}
+
+/* title style ------------------ */
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title__line {
+    width: 1087px;
+    height: 1px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 45%;
+    background: #E03926;
+}
+
+.title__line::before {
+    content: url('./images/title_dot.svg');
+    width: 8.945px;
+    height: 9px;
+    position: absolute;
+    left: 25px;
+    top: -9px;
+}
+
+.title h2 {
+    color: #FFF;
+    text-align: right;
+    font-family: Old Standard TT;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    align-self: flex-end;
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
 /* Header ------------------------------------------------------------------------------- */
+
 .header {
     width: 1440px;
-    height: 330px;
     flex-shrink: 0;
     background-color: #000;
 }
@@ -139,8 +233,124 @@ body {
 
 .main {
     flex: 1 1 auto;
+    margin-bottom: 335px;
 }
 
+.main__intro {
+    margin-bottom: 160px;
+    padding-top: 160px;
+    background-image: url('./images/crab_main_bg.png');
+    background-size: 1089px 712px;
+    background-position: right top -50px;
+    background-repeat: no-repeat;
+}
+
+.intro__title {
+    width: 646px;
+    margin-left: 30px;
+    margin-bottom: 30px; 
+    color: #FFF;
+    font-family: Old Standard TT;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.5%;       
+}
+
+.intro__text {
+    width: 389.473px;
+    margin-left: 25px;  
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.intro__button {
+    text-align: center;
+}
+
+/* about ------------------------------------------------------------------------------ */
+
+.about__title {
+    margin-bottom: 60px;
+}
+
+.about__content {
+    display: flex;
+    padding-left: 30px;
+    margin-bottom: 76px;
+}
+
+.about__content h3 {
+    color: #FFF;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.about__content p {
+    width: 704px;
+    margin-left: 127px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+.carousel {
+    width: 1340px;
+}
+
+.carousel__gallery {
+    margin-bottom: 16px;  
+    width: 1340px;  
+    overflow: hidden;
+}
+
+.carousel__gallery ul {
+    display: flex;
+}
+
+.carousel__gallery li {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    margin-right: 20px;
+}
+
+.carousel__gallery .carousel__img {
+    width: 830px;
+    height: 420px;
+    display: block;
+    
+}
+
+.carousel__slider {
+    display: flex;
+}
+
+.slider__counter {
+    margin-right: 29px;
+}
+
+.slider__line {
+    align-self: center;
+    width: 770px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.slider__line_position {
+    width: 80px;
+    height: 1px;
+    background: #E03926;
+}
 
 /* footer ----------------------------------------------------------------------------- */
 
