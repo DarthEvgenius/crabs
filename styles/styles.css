@@ -27,68 +27,39 @@ body {
    background-size: 100% auto;
 }
 
+.main {
+    flex: 1 1 auto;  
+    width: 100%;
+}
+
 [class*="__container"] {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0px auto;
-}
-
-/* carousel styles ----------- */
-
-.carousel {
-    width: 1340px;
-}
-
-.carousel__gallery {
-    width: 1340px;  
-    overflow: hidden;
-}
-
-.carousel__gallery ul {
-    display: flex;
-    padding-left: 0;
-}
-
-.carousel__gallery img {
-    border: 1px solid rgba(255, 255, 255, 0.30);
-}
-
-.carousel__img {
-    display: block;
-}
-
-.carousel__slider {
-    display: flex;
-}
-
-.slider__line {
-    align-self: center;
-    background: rgba(255, 255, 255, 0.50);
-}
-
-.slider__line_position {
-    width: 80px;
-    height: 1px;
-    background: #E03926;    
+    padding: 0 15px;
 }
 
 /* Header ------------------------------------------------------------------------------- */
 
 .header {
-    max-width: 1440px;
+    width: 100%;
     background-color: #000;
 }
 
-.tools {
-    margin: 84px 30px 0px;
+/* Иконки над меню */
+.tools { 
+    margin: 5px 30px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.header__tools_small {
+    display: none;
+}
+/* иконка трубки */
 .tools__telephone {
     position: relative;
 }
-
+/* поповер с телефонами */
 .tools__numbers {
     width: 294px;
     height: 173px;
@@ -134,6 +105,7 @@ body {
     margin-left: 54px;
 }
 
+/* значок корзины */
 .tools__basket_active {
     position: relative;
 }
@@ -159,7 +131,7 @@ body {
     fill:#E03926;
 }
 
-
+/* глваное меню */
 .menu__list {
     display: flex;
     justify-content: stretch;
@@ -183,8 +155,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    transition: all .3s;
-    
+    transition: all .3s;    
 }
 
 .menu__link:hover {
@@ -197,22 +168,62 @@ body {
     flex-shrink: 0;
 }
 
-@media (max-width: 576px) {
-    .header img {
+@media (max-width: 992px) {
+    .header__menu {
+        display: none;
+    }
+    .header__tools {
+        display: none;
+    }
+    .header__tools_small {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 15px 0;
+        padding-bottom: 27px;
+    }
+    .menu_burger {
+        position: relative;
+        top: 8px;
+    }     
+    .menu_burger span {
+        position: absolute;
+        background-color: #fff;
+        width: 30px;
+        height: 1px;
+        top: 9px;
+    }
+    .menu_burger::after,
+    .menu_burger::before {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+    }
+    .menu_burger::before {
+        top: 0;
+    }
+    .menu_burger::after {
+        top: 18px;
+    }    
+    .tools__logo {
+        position: relative;
+        left: 15px;
+    }
+    .tools__logo img {
         width: 80px;
         height: 45px;
-        flex-shrink: 0;
+        padding-left: 30px;
+    }
+    .tools__small_logos {
+        padding-top: 3px;
+    }
+    .tools__small_logos div {
+        display: inline-block;
     }
 }
 
 /* main ------------------------------------------------------------------------------ */
-
-.main {
-    flex: 1 1 auto;
-    max-width: 1440px;    
-}
-
-
 
 .intro {
     margin-bottom: 160px;
@@ -250,8 +261,26 @@ body {
     text-align: center;
 }
 
-/* about ------------------------------------------------------------------------------ */
+@media (max-width: 992px) {
+    .intro {
+        padding-top: 54px;
+        background-size: 655px 427px;
+        background-position: 15px 15px;
+    }
+    .intro__title {
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    .intro__text {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+}
 
+/* about ------------------------------------------------------------------------------ */
+.about{
+    width: 100%;
+}
 .about__title {
     margin-bottom: 60px;
 }
@@ -272,7 +301,7 @@ body {
 }
 
 .about__content p {
-    width: 704px;
+    max-width: 704px;
     margin-left: 127px;
     color: rgba(255, 255, 255, 0.70);
     font-family: Mulish;
@@ -308,7 +337,6 @@ body {
     height: 1px;    
 }
 
-
 /* popular ------------------------------------------------------------------------------ */
 
 .popular  {
@@ -327,7 +355,6 @@ body {
     margin-right: 40px;
     display: flex;
     flex-direction: column;
-
 }
 
 .popular__carousel .carousel__img {
@@ -483,6 +510,7 @@ body {
     font-weight: 500;
     margin-left: 30px;
     margin-right: 74px;
+    line-height: 130%;
 }
 
 .recipe__content_images {
@@ -516,6 +544,7 @@ body {
 /* footer ----------------------------------------------------------------------------- */
 
 .footer {
+    width: 100%;
     color: #FFF;
     font-family: Mulish;
     font-size: 28px;
@@ -598,7 +627,6 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
-
     display: flex;
     flex-direction: column;
 }
@@ -628,7 +656,6 @@ body {
 .callback__inputs input:focus-visible {
     outline: none;
 }
-
 
 .callback__btn {
     width: 439px;
