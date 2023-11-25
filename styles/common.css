@@ -1,0 +1,125 @@
+/* circle button styles -------------- */
+.circle-btn {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    color: #E03926;
+    font-weight: 600;
+    transition: color .2s;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    color: #fff;
+}
+
+.circle-btn:active {
+    color: #fff;
+}
+.circle-btn:active .circle-btn__circle {
+    stroke-width: 2px;
+}
+
+.circle-btn__circle {
+    width: 229.689px;
+    height: 229.689px;
+}
+
+.circle-btn__btn {
+    color: inherit;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: 130%;
+    white-space: nowrap;
+    background: none;
+
+    position: absolute;
+    right: 114px;
+}
+
+.circle-btn__arrow {
+    content: url('../images/btn_arrow.svg');
+    width: 100.864px;
+
+    position: absolute;
+    top: 136px;
+    right: 114px;
+}
+
+/* title style ------------------ */
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__line {
+    height: 1px;
+    position: relative;
+    top: 33px;
+    border-bottom: 1px solid #E03926;
+    /* padding-top: 30px; */
+}
+
+.title__line::before {
+    content: url('../images/title_dot.svg');
+    width: 8.945px;
+    height: 9px;
+    position: absolute;
+    left: 25px;
+    top: -9px;
+}
+
+.title h2 {
+    color: #FFF;
+    text-align: right;
+    font-family: Old Standard TT;
+    font-size: 64px;
+    font-weight: 700;
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* carousel styles ----------- */
+
+.carousel {
+    width: 1340px;
+}
+
+.carousel__gallery {
+    width: 1340px;  
+    overflow: hidden;
+}
+
+.carousel__gallery ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.carousel__gallery img {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.carousel__img {
+    display: block;
+}
+
+.carousel__slider {
+    display: flex;
+}
+
+.slider__line {
+    align-self: center;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.slider__line_position {
+    width: 80px;
+    height: 1px;
+    background: #E03926;    
+}

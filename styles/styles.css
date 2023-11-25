@@ -1,33 +1,12 @@
-/* Обнуление ------------------------------------------- */
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
+@import url('./basket.css');
+@import url('./common.css');
+@import url('./reset.css');
 
 html, body {
     height: 100%;
     line-height: 1;
 }
 
-/* Common styles ------------------------------------------------------------ */
 body {
     font-family: Mulish;
     font-size: 14px;
@@ -44,153 +23,19 @@ body {
 
     background: 
     linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 1) 95%),
-   url('./images/main_bg.jfif') repeat-y;
+   url('../images/main_bg.jfif') repeat-y;
    background-position: 0 600px;
    background-size: 100% auto;
 }
 
-[class*="__container"] {
-    width: 1300px;
+/* [class*="__container"] {
+    max-width: 1300px;
     margin: 0px auto;
-}
-
-/* circle button styles -------------- */
-.circle-btn {
-    position: relative;
-    width: 230px;
-    height: 230px;
-    display: flex;
-    align-items: center;
-    margin: 0px auto;
-    color: #E03926;
-    font-weight: 600;
-    transition: color .2s;
-    cursor: pointer;
-}
-
-.circle-btn:hover {
-    color: #fff;
-}
-
-.circle-btn:active {
-    color: #fff;
-}
-.circle-btn:active .circle-btn__circle {
-    stroke-width: 2px;
-}
-
-.circle-btn__circle {
-    width: 229.689px;
-    height: 229.689px;
-}
-
-.circle-btn__btn {
-    color: inherit;
-    font-family: Mulish;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: inherit;
-    line-height: 130%;
-    white-space: nowrap;
-    background: none;
-
-    position: absolute;
-    right: 114px;
-}
-
-.circle-btn__arrow {
-    content: url('./images/btn_arrow.svg');
-    width: 100.864px;
-
-    position: absolute;
-    top: 136px;
-    right: 114px;
-}
-
-/* title style ------------------ */
-.title {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.title__line {
-    width: 1087px;
-    height: 1px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 45%;
-    background: #E03926;
-}
-
-.title__line::before {
-    content: url('./images/title_dot.svg');
-    width: 8.945px;
-    height: 9px;
-    position: absolute;
-    left: 25px;
-    top: -9px;
-}
-
-.title h2 {
-    color: #FFF;
-    text-align: right;
-    font-family: Old Standard TT;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    align-self: flex-end;
-    padding-right: 30px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-/* carousel styles ----------- */
-
-.carousel {
-    width: 1340px;
-}
-
-.carousel__gallery {
-    width: 1340px;  
-    overflow: hidden;
-}
-
-.carousel__gallery ul {
-    display: flex;
-    padding-left: 0;
-}
-
-.carousel__gallery img {
-    border: 1px solid rgba(255, 255, 255, 0.30);
-}
-
-.carousel__img {
-    display: block;
-}
-
-.carousel__slider {
-    display: flex;
-}
-
-.slider__line {
-    align-self: center;
-    background: rgba(255, 255, 255, 0.50);
-}
-
-.slider__line_position {
-    width: 80px;
-    height: 1px;
-    background: #E03926;    
-}
-
+} */
 
 /* Header ------------------------------------------------------------------------------- */
 
 .header {
-    width: 1440px;
-    flex-shrink: 0;
     background-color: #000;
 }
 
@@ -199,6 +44,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.tools__logo img {
+    user-select: none;
 }
 
 .tools__telephone {
@@ -221,7 +70,7 @@ body {
     left: 274px;
     color: #FFF;
     font-family: Mulish;
-    font-size: 14.31px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     cursor: default;
@@ -234,11 +83,10 @@ body {
 .tools__numbers_text {
     color: #FFF;
     font-family: Mulish;
-    font-size: 19.08px;
+    font-size: 19px;
     font-weight: 600;
     width: 193px;
     margin: 18px 0 19px 54px;
-
 }
 
 .tools__numbers_content {
@@ -250,15 +98,15 @@ body {
     margin-left: 54px;
 }
 
-.tools__basket_active {
+.tools__basket_full {
     position: relative;
 }
 
-.tools__basket_active::after {
+.tools__basket_full::after {
     position: absolute;
-    content: url('./images/Ellipse.svg');;
+    content: url('../images/Ellipse.svg');;
     width: 12px;
-    height: 10.88px;
+    height: 10px;
     top: -3px;
     right: -5px;
 }
@@ -274,7 +122,6 @@ body {
 .tools__svg:hover .tools__svg-path {
     fill:#E03926;
 }
-
 
 .menu__list {
     display: flex;
@@ -299,8 +146,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    transition: all .3s;
-    
+    transition: all .3s;    
 }
 
 .menu__link:hover {
@@ -310,38 +156,21 @@ body {
 .header img {
     width: 162px;
     height: 92px;
-    flex-shrink: 0;
 }
-
-@media (max-width: 576px) {
-    .header img {
-        width: 80px;
-        height: 45px;
-        flex-shrink: 0;
-    }
-}
-
 
 /* main ------------------------------------------------------------------------------ */
 
 .main {
     flex: 1 1 auto;
-    width: 1440px;
-    /*background: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 100%),
-   url('./images/main_bg.jfif') no-repeat;
-   background-position: 0 400px;
-   background-size: cover; */
 }
-
-
 
 .intro {
     margin-bottom: 160px;
     padding-top: 160px;
-    background-image: url('./images/crab_main_bg.png');
-    background-size: 1089px 712px;
-    background-position: right top -50px;
+    background-image: url('../images/crab_main_bg.png');
+    /* background-size: 1089px 712px; */
+    background-size: 90%;
+    background-position: 200px 0;
     background-repeat: no-repeat;
 }
 
@@ -353,13 +182,12 @@ body {
     font-family: Old Standard TT;
     font-size: 110px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 110.5%;       
+    font-weight: 400;       
 }
 
 .intro__text {
-    width: 389.473px;
-    margin-left: 25px;  
+    width: 389px;
+    margin-left: 30px;  
     color: rgba(255, 255, 255, 0.70);
     font-family: Mulish;
     font-size: 18px;
@@ -372,12 +200,14 @@ body {
     text-align: center;
 }
 
-
-
 /* about ------------------------------------------------------------------------------ */
 
 .about__title {
     margin-bottom: 60px;
+}
+
+.about__title .title__line {
+    width: 69vw;
 }
 
 .about__content {
@@ -445,7 +275,8 @@ body {
 }
 
 .popular__title .title__line {
-    width: 886px;
+    width: 63%;
+    flex-shrink: 1;
 }
 
 .popular__carousel .carousel__card {
@@ -515,7 +346,7 @@ body {
 /* catalog styles---------------------------------------------------------------------- */
 
 .catalog__title .title__line {
-    width: 1012px;
+    width: 74%;
 }
 
 .catalog__shop {
@@ -589,7 +420,7 @@ body {
 /* recipe styles ---------------------------------------------------------------------- */
 
 .recipe__title .title__line {
-    width: 999px;
+    width: 73%;
 }
 
 .recipe__title {
@@ -648,7 +479,6 @@ body {
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 130%;
 }
 
 .footer__contacts {
@@ -684,6 +514,7 @@ body {
     width: 218px;
     height: 123.802px;
     margin-bottom: 30px;
+    user-select: none;
 }
 
 .contacts__img_social {
@@ -755,15 +586,6 @@ body {
 .callback__inputs input:focus-visible {
     outline: none;
 }
-
-/* #callback_name {
-    width: 209px;
-}
-
-#callback_phone {
-    width: 209px;
-    margin-left: 20px;
-} */
 
 .callback__btn {
     width: 439px;
