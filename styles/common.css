@@ -1,0 +1,90 @@
+.circle-btn {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    color: #E03926;
+    font-weight: 600;
+    transition: color .2s;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    color: #fff;
+}
+
+.circle-btn:active {
+    color: #fff;
+}
+.circle-btn:active .circle-btn__circle {
+    stroke-width: 2px;
+}
+
+.circle-btn__circle {
+    width: 229.689px;
+    height: 229.689px;
+}
+
+.circle-btn__btn {
+    color: inherit;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: 130%;
+    white-space: nowrap;
+    background: none;
+
+    position: absolute;
+    right: 114px;
+}
+
+.circle-btn__arrow {
+    content: url('../images/btn_arrow.svg');
+    width: 100.864px;
+
+    position: absolute;
+    top: 136px;
+    right: 114px;
+}
+
+/* title style ------------------ */
+.title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title__line {
+    width: 1087px;
+    height: 1px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 45%;
+    background: #E03926;
+}
+
+.title__line::before {
+    content: url('../images/title_dot.svg');
+    width: 8.945px;
+    height: 9px;
+    position: absolute;
+    left: 25px;
+    top: -9px;
+}
+
+.title h2 {
+    color: #FFF;
+    text-align: right;
+    font-family: Old Standard TT;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    align-self: flex-end;
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

@@ -1,0 +1,639 @@
+@import url('./reset.css');
+@import url('./common.css');
+
+html, body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: Mulish;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 18px;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 1) 95%),
+   url('../images/main_bg.jfif') repeat-y;
+   background-position: 0 600px;
+   background-size: 100% auto;
+}
+
+[class*="__container"] {
+    width: 1300px;
+    margin: 0px auto;
+}
+
+/* carousel styles ----------- */
+
+.carousel {
+    width: 1340px;
+}
+
+.carousel__gallery {
+    width: 1340px;  
+    overflow: hidden;
+}
+
+.carousel__gallery ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.carousel__gallery img {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.carousel__img {
+    display: block;
+}
+
+.carousel__slider {
+    display: flex;
+}
+
+.slider__line {
+    align-self: center;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.slider__line_position {
+    width: 80px;
+    height: 1px;
+    background: #E03926;    
+}
+
+/* Header ------------------------------------------------------------------------------- */
+
+.header {
+    max-width: 1440px;
+    background-color: #000;
+}
+
+.tools {
+    margin: 84px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools__telephone {
+    position: relative;
+}
+
+.tools__numbers {
+    width: 294px;
+    height: 173px;
+    border: 1.5px solid #FFF;
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 43px;
+}
+
+.tools__numbers span {
+    position: relative;
+    top: 10px;
+    left: 274px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 14.31px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: default;
+}
+
+.tools__numbers span:hover {
+    cursor: pointer;
+}
+
+.tools__numbers_text {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 19.08px;
+    font-weight: 600;
+    width: 193px;
+    margin: 18px 0 19px 54px;
+
+}
+
+.tools__numbers_content {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-left: 54px;
+}
+
+.tools__basket_active {
+    position: relative;
+}
+
+.tools__basket_active::after {
+    position: absolute;
+    content: url('../images/Ellipse.svg');;
+    width: 12px;
+    height: 10.88px;
+    top: -3px;
+    right: -5px;
+}
+
+.tools__svg-path {
+    transition: all .2s ease-in;
+}
+
+.tools__svg:hover {
+    cursor: pointer;
+}
+
+.tools__svg:hover .tools__svg-path {
+    fill:#E03926;
+}
+
+
+.menu__list {
+    display: flex;
+    justify-content: stretch;
+    padding-left: 0;
+}
+
+.menu__item {
+    flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    text-align: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all .3s;
+    
+}
+
+.menu__link:hover {
+    color: #E03926;
+}
+
+.header img {
+    width: 162px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+    .header img {
+        width: 80px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+}
+
+/* main ------------------------------------------------------------------------------ */
+
+.main {
+    flex: 1 1 auto;
+    max-width: 1440px;    
+}
+
+
+
+.intro {
+    margin-bottom: 160px;
+    padding-top: 160px;
+    background-image: url('../images/crab_main_bg.png');
+    background-size: 1089px 712px;
+    background-position: right top -50px;
+    background-repeat: no-repeat;
+}
+
+.intro__title {
+    width: 646px;
+    margin-left: 30px;
+    margin-bottom: 30px; 
+    color: #FFF;
+    font-family: Old Standard TT;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110.5%;       
+}
+
+.intro__text {
+    width: 389.473px;
+    margin-left: 25px;  
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.intro__button {
+    text-align: center;
+}
+
+/* about ------------------------------------------------------------------------------ */
+
+.about__title {
+    margin-bottom: 60px;
+}
+
+.about__content {
+    display: flex;
+    padding-left: 30px;
+    margin-bottom: 76px;
+}
+
+.about__content h3 {
+    color: #FFF;
+    text-align: right;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.about__content p {
+    width: 704px;
+    margin-left: 127px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+}
+
+.about__carousel .carousel__gallery {
+    margin-bottom: 16px;
+}
+
+.about__carousel .carousel__gallery li {
+    margin-right: 20px;
+}
+
+.about__carousel .carousel__img {
+    width: 830px;
+    height: 420px;       
+}
+
+.about__carousel .carousel__slider {
+    margin-bottom: 160px;
+}
+
+.slider__counter {
+    margin-right: 29px;
+}
+
+.slider__line {
+    width: 770px;
+    height: 1px;    
+}
+
+
+/* popular ------------------------------------------------------------------------------ */
+
+.popular  {
+    margin-bottom: 160px;
+}
+
+.popular__title {
+    margin-bottom: 40px;
+}
+
+.popular__title .title__line {
+    width: 886px;
+}
+
+.popular__carousel .carousel__card {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popular__carousel .carousel__img {
+    width: 420px;
+    height: 500px;
+    margin-bottom: 33px;
+}
+
+.card__name {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card__btn {
+    width: 170px;
+    height: 40px;
+    align-self: center;
+    color: #000;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.card__btn svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.card__btn:hover {
+    color: #E03926;
+}
+
+.card__btn:hover path {
+    fill: #E03926;
+}
+
+.card__btn:active {
+    color: #fff;
+    background: #E03926;
+}
+
+.card__btn:active path {
+    fill: #fff;
+}
+
+.popular__carousel .slider__line {
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* catalog styles---------------------------------------------------------------------- */
+
+.catalog__title .title__line {
+    width: 1012px;
+}
+
+.catalog__shop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.shop__card {
+    width: 420px;
+    height: 578px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 60px;
+}
+
+.shop__card_img {
+    margin-bottom: 41px;
+}
+
+.shop__card_img img{
+    width: 418px;
+    height: 342px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.shop__card_content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 21px;
+}
+
+.shop__card_title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.shop__card_text {
+    width: 360px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.shop__card_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop__card_price span {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+}
+
+.catalog__button {
+    margin-bottom: 160px;
+}
+
+/* recipe styles ---------------------------------------------------------------------- */
+
+.recipe__title .title__line {
+    width: 999px;
+}
+
+.recipe__title {
+    margin-bottom: 40px;
+}
+
+.recipe__content {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.recipe__content_text {
+    width: 334px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-right: 74px;
+}
+
+.recipe__content_images {
+    padding-left: 20px;
+    width: 831px;
+    border-left: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.recipe__content_row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 20px;
+}
+
+.recipe__content_row:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.recipe__content_img img{
+    border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.recipe__button {
+    margin-bottom: 260px;
+}
+
+/* footer ----------------------------------------------------------------------------- */
+
+.footer {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;    
+}
+
+.footer__line_horizont {
+    width: 430px;
+    height: 1px;
+    flex-shrink: 0;
+    background: #FFF;
+    margin-bottom: 79px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.footer__logos {
+    margin-top: -65px;
+}
+
+.contacts__social {
+    margin-bottom: 50px;
+}
+
+.contacts__img_crab {
+    width: 218px;
+    height: 123.802px;
+    margin-bottom: 30px;
+}
+
+.contacts__img_social {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__line__vertical {
+    width: 1px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+}
+
+.footer__phones p {
+    align-self: start;
+}
+
+.footer__callback {
+    width: 439px;
+    margin: 0 auto;
+}
+
+.callback__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 60px;
+}
+
+.callback__form {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.callback__inputs {
+    display: inline-block;
+    margin-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.callback__inputs input {
+    width: 210px;
+    background: #000;
+    border-bottom: 1px solid #fff;
+    padding-left: 20px;
+    padding-bottom: 9px;
+    color: #fff;
+}
+
+.callback__inputs input:focus {
+    border: none;
+    border-bottom: 1px solid #E03926;
+}
+
+.callback__inputs input:focus-visible {
+    outline: none;
+}
+
+
+.callback__btn {
+    width: 439px;
+    height: 50px;
+    background-color: #E03926;
+    color: #FFF;
+    margin-bottom: 153px;
+}
