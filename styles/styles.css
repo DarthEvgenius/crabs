@@ -42,7 +42,6 @@ body {
         max-width: 1300px;
     }
 }
-
 /* Header ------------------------------------------------------------------------------- */
 
 .header {
@@ -696,8 +695,9 @@ body {
 }
 
 .recipe__content_img img {
-    max-width: 811px;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.30);
+    object-fit: contain;
 }
 
 .recipe__button {
