@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./styles/styles.css" rel="stylesheet">
+
+        <title>Crabster</title>
+    </head>
+    <body>
+        <div class="wrapper basket__wrapper">
+            <header class="header basket__header">
+                <div class="header__container">
+                    
+                    <div class="header__tools_small">
+                        
+                        <div class="menu_burger"><span></span></div>
+
+                        <div class="tools__logo">
+                            <img src="./images/crab_logo.png" alt="логотип">
+                        </div>
+
+                        <div class="tools__small_logos">
+                            <div class="tools__telephone">
+                                <svg class="tools__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <path class="tools__svg-path" d="M18.2977 4.57029C18.3288 4.45032 18.4063 4.34758 18.513 4.28455C18.6197 4.22152 18.7471 4.20333 18.8672 4.23396C20.5267 4.6662 22.0409 5.53343 23.2534 6.74615C24.4659 7.95888 25.3329 9.47318 25.7649 11.1328C25.7955 11.2527 25.7775 11.38 25.7147 11.4867C25.6519 11.5934 25.5495 11.6709 25.4297 11.7023C25.3916 11.7132 25.3521 11.7187 25.3125 11.7187C25.2089 11.7184 25.1082 11.6837 25.0264 11.6201C24.9445 11.5565 24.8861 11.4675 24.8602 11.3672C24.4689 9.86959 23.6857 8.50328 22.5912 7.40878C21.4967 6.31428 20.1304 5.53111 18.6328 5.13982C18.5131 5.1084 18.4106 5.03087 18.3478 4.92416C18.285 4.81746 18.267 4.69024 18.2977 4.57029ZM17.6953 8.88982C19.4531 9.36209 20.6379 10.5469 21.1102 12.3047C21.1361 12.405 21.1945 12.494 21.2764 12.5576C21.3582 12.6212 21.4589 12.6559 21.5625 12.6562C21.6021 12.6562 21.6416 12.6507 21.6797 12.6398C21.7996 12.6077 21.9018 12.5293 21.964 12.4219C22.0262 12.3144 22.0432 12.1867 22.0113 12.0668C21.4488 9.9574 20.0367 8.55115 17.9297 7.98396C17.8126 7.96132 17.6913 7.98417 17.5904 8.04786C17.4896 8.11155 17.4168 8.2113 17.3869 8.32677C17.357 8.44225 17.3723 8.56477 17.4296 8.66938C17.4869 8.77399 17.5819 8.85283 17.6953 8.88982ZM26.7117 20.4586C26.5172 21.9339 25.7921 23.2879 24.6719 24.2675C23.5517 25.2471 22.1131 25.7852 20.625 25.7812C11.5781 25.7812 4.21876 18.4219 4.21876 9.37498C4.21568 7.8875 4.75418 6.44975 5.73368 5.33029C6.71318 4.21083 8.0667 3.48621 9.54142 3.29177C9.84354 3.25504 10.1494 3.31732 10.4131 3.46925C10.6768 3.62118 10.8842 3.85456 11.0039 4.13435L13.4766 9.65857C13.569 9.87278 13.6067 10.1066 13.5862 10.339C13.5658 10.5714 13.4878 10.7951 13.3594 10.9898C13.3488 11.0051 13.3383 11.0203 13.3266 11.0344L10.8422 13.9887C10.8032 14.0534 10.7809 14.1267 10.7772 14.2022C10.7735 14.2777 10.7886 14.3529 10.8211 14.4211C11.7399 16.3019 13.7098 18.2566 15.6129 19.1754C15.6816 19.2072 15.7571 19.2217 15.8328 19.2174C15.9084 19.2131 15.9818 19.1902 16.0465 19.1508L18.9609 16.6758L19.0055 16.6418C19.2005 16.5129 19.4246 16.4348 19.6574 16.4143C19.8903 16.3938 20.1246 16.4317 20.3391 16.5246L25.8727 19.0043C26.1497 19.1248 26.3805 19.3313 26.531 19.5932C26.6815 19.8552 26.7436 20.1586 26.7082 20.4586H26.7117ZM25.4988 19.8586L19.9629 17.3789C19.8956 17.3507 19.8226 17.3388 19.7499 17.3443C19.6772 17.3498 19.6068 17.3725 19.5445 17.4105L16.6406 19.8855L16.5973 19.9183C16.3954 20.0532 16.162 20.1334 15.9199 20.1513C15.6778 20.1691 15.4351 20.124 15.2156 20.0203C13.1063 19.0019 11.0074 16.9172 9.98907 14.8324C9.88434 14.6146 9.83751 14.3734 9.85311 14.1322C9.86871 13.8911 9.94621 13.658 10.0781 13.4554C10.0887 13.439 10.1004 13.425 10.1121 13.4097L12.5953 10.4566C12.6325 10.3933 12.6544 10.3222 12.6591 10.2489C12.6637 10.1756 12.6511 10.1023 12.6223 10.0347L10.1449 4.51052C10.11 4.42489 10.0506 4.35149 9.97404 4.29956C9.89751 4.24764 9.80733 4.21952 9.71486 4.21873C9.69612 4.21756 9.67734 4.21756 9.65861 4.21873C8.40969 4.38421 7.26379 4.9989 6.43516 5.94788C5.60653 6.89686 5.1519 8.11515 5.15626 9.37498C5.15626 17.9039 12.0961 24.8437 20.625 24.8437C21.8848 24.8481 23.1031 24.3935 24.0521 23.5648C25.0011 22.7362 25.6158 21.5903 25.7813 20.3414C25.7921 20.2408 25.7701 20.1395 25.7185 20.0525C25.667 19.9655 25.5887 19.8974 25.4953 19.8586H25.4988Z" fill="white"/>
+                                </svg>                        
+
+                                <!-- Скрытые телефоны, показать при нажатии на tools__telephone -->
+                                <div class="tools__numbers" hidden>
+                                    <span>X</span>
+                                    <div class="tools__numbers_text">Телефоны для связи</div>
+                                    <div class="tools__numbers_content">
+                                        +7 (911) 221-65-59<br>
+                                        +7 (952) 203-13-37<br>
+                                        +7 (952) 542-76-64
+                                    </div>
+                                </div>                            
+                            </div>
+
+                            <div class="tools__basket">
+                                <a href="#">
+                                    <svg class="tools__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <path class="tools__svg-path" d="M11.0156 25.3125C11.0156 25.637 10.9194 25.9542 10.7391 26.224C10.5589 26.4938 10.3026 26.7041 10.0028 26.8282C9.70305 26.9524 9.37318 26.9849 9.05493 26.9216C8.73668 26.8583 8.44435 26.702 8.2149 26.4726C7.98546 26.2432 7.8292 25.9508 7.7659 25.6326C7.7026 25.3143 7.73509 24.9844 7.85926 24.6847C7.98344 24.3849 8.19372 24.1286 8.46352 23.9484C8.73332 23.7681 9.05052 23.6719 9.375 23.6719C9.81012 23.6719 10.2274 23.8447 10.5351 24.1524C10.8428 24.4601 11.0156 24.8774 11.0156 25.3125ZM21.5625 23.6719C21.238 23.6719 20.9208 23.7681 20.651 23.9484C20.3812 24.1286 20.1709 24.3849 20.0468 24.6847C19.9226 24.9844 19.8901 25.3143 19.9534 25.6326C20.0167 25.9508 20.173 26.2432 20.4024 26.4726C20.6318 26.702 20.9242 26.8583 21.2424 26.9216C21.5607 26.9849 21.8906 26.9524 22.1903 26.8282C22.4901 26.7041 22.7464 26.4938 22.9266 26.224C23.1069 25.9542 23.2031 25.637 23.2031 25.3125C23.2031 24.8774 23.0303 24.4601 22.7226 24.1524C22.4149 23.8447 21.9976 23.6719 21.5625 23.6719ZM26.9215 8.64375L23.5793 19.5082C23.4191 20.0357 23.0933 20.4976 22.65 20.8254C22.2067 21.1532 21.6697 21.3295 21.1184 21.3281H9.85195C9.29139 21.3261 8.74662 21.1422 8.29949 20.8041C7.85235 20.466 7.52699 19.9919 7.37227 19.4531L3.13477 4.62305C3.12072 4.57395 3.09103 4.53079 3.05021 4.50012C3.00938 4.46944 2.95966 4.45294 2.90859 4.45312H0.9375C0.75102 4.45312 0.572177 4.37905 0.440316 4.24718C0.308454 4.11532 0.234375 3.93648 0.234375 3.75C0.234375 3.56352 0.308454 3.38468 0.440316 3.25282C0.572177 3.12095 0.75102 3.04688 0.9375 3.04688H2.90859C3.26479 3.04784 3.61108 3.16428 3.89548 3.37875C4.17988 3.59321 4.38706 3.89412 4.48594 4.23633L5.48555 7.73438H26.25C26.3599 7.73449 26.4683 7.76037 26.5664 7.80994C26.6645 7.85952 26.7496 7.93141 26.8149 8.01984C26.8802 8.10826 26.9239 8.21077 26.9424 8.31912C26.9609 8.42748 26.9537 8.53866 26.9215 8.64375ZM25.2984 9.14062H5.8875L8.72461 19.0723C8.79465 19.3172 8.94258 19.5326 9.146 19.6859C9.34941 19.8392 9.59724 19.922 9.85195 19.9219H21.1148C21.3655 19.9219 21.6096 19.8416 21.8112 19.6927C22.0129 19.5438 22.1615 19.3341 22.2352 19.0945L25.2984 9.14062Z" fill="white"/>
+                                    </svg>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <div class="header__tools tools">
+
+                        <div class="tools__telephone">
+                            <svg class="tools__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path class="tools__svg-path" d="M18.2977 4.57029C18.3288 4.45032 18.4063 4.34758 18.513 4.28455C18.6197 4.22152 18.7471 4.20333 18.8672 4.23396C20.5267 4.6662 22.0409 5.53343 23.2534 6.74615C24.4659 7.95888 25.3329 9.47318 25.7649 11.1328C25.7955 11.2527 25.7775 11.38 25.7147 11.4867C25.6519 11.5934 25.5495 11.6709 25.4297 11.7023C25.3916 11.7132 25.3521 11.7187 25.3125 11.7187C25.2089 11.7184 25.1082 11.6837 25.0264 11.6201C24.9445 11.5565 24.8861 11.4675 24.8602 11.3672C24.4689 9.86959 23.6857 8.50328 22.5912 7.40878C21.4967 6.31428 20.1304 5.53111 18.6328 5.13982C18.5131 5.1084 18.4106 5.03087 18.3478 4.92416C18.285 4.81746 18.267 4.69024 18.2977 4.57029ZM17.6953 8.88982C19.4531 9.36209 20.6379 10.5469 21.1102 12.3047C21.1361 12.405 21.1945 12.494 21.2764 12.5576C21.3582 12.6212 21.4589 12.6559 21.5625 12.6562C21.6021 12.6562 21.6416 12.6507 21.6797 12.6398C21.7996 12.6077 21.9018 12.5293 21.964 12.4219C22.0262 12.3144 22.0432 12.1867 22.0113 12.0668C21.4488 9.9574 20.0367 8.55115 17.9297 7.98396C17.8126 7.96132 17.6913 7.98417 17.5904 8.04786C17.4896 8.11155 17.4168 8.2113 17.3869 8.32677C17.357 8.44225 17.3723 8.56477 17.4296 8.66938C17.4869 8.77399 17.5819 8.85283 17.6953 8.88982ZM26.7117 20.4586C26.5172 21.9339 25.7921 23.2879 24.6719 24.2675C23.5517 25.2471 22.1131 25.7852 20.625 25.7812C11.5781 25.7812 4.21876 18.4219 4.21876 9.37498C4.21568 7.8875 4.75418 6.44975 5.73368 5.33029C6.71318 4.21083 8.0667 3.48621 9.54142 3.29177C9.84354 3.25504 10.1494 3.31732 10.4131 3.46925C10.6768 3.62118 10.8842 3.85456 11.0039 4.13435L13.4766 9.65857C13.569 9.87278 13.6067 10.1066 13.5862 10.339C13.5658 10.5714 13.4878 10.7951 13.3594 10.9898C13.3488 11.0051 13.3383 11.0203 13.3266 11.0344L10.8422 13.9887C10.8032 14.0534 10.7809 14.1267 10.7772 14.2022C10.7735 14.2777 10.7886 14.3529 10.8211 14.4211C11.7399 16.3019 13.7098 18.2566 15.6129 19.1754C15.6816 19.2072 15.7571 19.2217 15.8328 19.2174C15.9084 19.2131 15.9818 19.1902 16.0465 19.1508L18.9609 16.6758L19.0055 16.6418C19.2005 16.5129 19.4246 16.4348 19.6574 16.4143C19.8903 16.3938 20.1246 16.4317 20.3391 16.5246L25.8727 19.0043C26.1497 19.1248 26.3805 19.3313 26.531 19.5932C26.6815 19.8552 26.7436 20.1586 26.7082 20.4586H26.7117ZM25.4988 19.8586L19.9629 17.3789C19.8956 17.3507 19.8226 17.3388 19.7499 17.3443C19.6772 17.3498 19.6068 17.3725 19.5445 17.4105L16.6406 19.8855L16.5973 19.9183C16.3954 20.0532 16.162 20.1334 15.9199 20.1513C15.6778 20.1691 15.4351 20.124 15.2156 20.0203C13.1063 19.0019 11.0074 16.9172 9.98907 14.8324C9.88434 14.6146 9.83751 14.3734 9.85311 14.1322C9.86871 13.8911 9.94621 13.658 10.0781 13.4554C10.0887 13.439 10.1004 13.425 10.1121 13.4097L12.5953 10.4566C12.6325 10.3933 12.6544 10.3222 12.6591 10.2489C12.6637 10.1756 12.6511 10.1023 12.6223 10.0347L10.1449 4.51052C10.11 4.42489 10.0506 4.35149 9.97404 4.29956C9.89751 4.24764 9.80733 4.21952 9.71486 4.21873C9.69612 4.21756 9.67734 4.21756 9.65861 4.21873C8.40969 4.38421 7.26379 4.9989 6.43516 5.94788C5.60653 6.89686 5.1519 8.11515 5.15626 9.37498C5.15626 17.9039 12.0961 24.8437 20.625 24.8437C21.8848 24.8481 23.1031 24.3935 24.0521 23.5648C25.0011 22.7362 25.6158 21.5903 25.7813 20.3414C25.7921 20.2408 25.7701 20.1395 25.7185 20.0525C25.667 19.9655 25.5887 19.8974 25.4953 19.8586H25.4988Z" fill="white"/>
+                            </svg>                        
+
+                            <!-- Скрытые телефоны, показать при нажатии на tools__telephone -->
+                            <div class="tools__numbers" hidden>
+                                <span>X</span>
+                                <div class="tools__numbers_text">Телефоны для связи</div>
+                                <div class="tools__numbers_content">
+                                    +7 (911) 221-65-59<br>
+                                    +7 (952) 203-13-37<br>
+                                    +7 (952) 542-76-64
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                                               
+                        <div class="tools__logo">
+                            <img src="./images/crab_logo.png" alt="логотип">
+                        </div>
+
+                        <!-- Класс "tools__basket_active" для корзины с товаром -->
+                        <div class="tools__basket">
+                            <svg class="tools__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path class="tools__svg-path" d="M11.0156 25.3125C11.0156 25.637 10.9194 25.9542 10.7391 26.224C10.5589 26.4938 10.3026 26.7041 10.0028 26.8282C9.70305 26.9524 9.37318 26.9849 9.05493 26.9216C8.73668 26.8583 8.44435 26.702 8.2149 26.4726C7.98546 26.2432 7.8292 25.9508 7.7659 25.6326C7.7026 25.3143 7.73509 24.9844 7.85926 24.6847C7.98344 24.3849 8.19372 24.1286 8.46352 23.9484C8.73332 23.7681 9.05052 23.6719 9.375 23.6719C9.81012 23.6719 10.2274 23.8447 10.5351 24.1524C10.8428 24.4601 11.0156 24.8774 11.0156 25.3125ZM21.5625 23.6719C21.238 23.6719 20.9208 23.7681 20.651 23.9484C20.3812 24.1286 20.1709 24.3849 20.0468 24.6847C19.9226 24.9844 19.8901 25.3143 19.9534 25.6326C20.0167 25.9508 20.173 26.2432 20.4024 26.4726C20.6318 26.702 20.9242 26.8583 21.2424 26.9216C21.5607 26.9849 21.8906 26.9524 22.1903 26.8282C22.4901 26.7041 22.7464 26.4938 22.9266 26.224C23.1069 25.9542 23.2031 25.637 23.2031 25.3125C23.2031 24.8774 23.0303 24.4601 22.7226 24.1524C22.4149 23.8447 21.9976 23.6719 21.5625 23.6719ZM26.9215 8.64375L23.5793 19.5082C23.4191 20.0357 23.0933 20.4976 22.65 20.8254C22.2067 21.1532 21.6697 21.3295 21.1184 21.3281H9.85195C9.29139 21.3261 8.74662 21.1422 8.29949 20.8041C7.85235 20.466 7.52699 19.9919 7.37227 19.4531L3.13477 4.62305C3.12072 4.57395 3.09103 4.53079 3.05021 4.50012C3.00938 4.46944 2.95966 4.45294 2.90859 4.45312H0.9375C0.75102 4.45312 0.572177 4.37905 0.440316 4.24718C0.308454 4.11532 0.234375 3.93648 0.234375 3.75C0.234375 3.56352 0.308454 3.38468 0.440316 3.25282C0.572177 3.12095 0.75102 3.04688 0.9375 3.04688H2.90859C3.26479 3.04784 3.61108 3.16428 3.89548 3.37875C4.17988 3.59321 4.38706 3.89412 4.48594 4.23633L5.48555 7.73438H26.25C26.3599 7.73449 26.4683 7.76037 26.5664 7.80994C26.6645 7.85952 26.7496 7.93141 26.8149 8.01984C26.8802 8.10826 26.9239 8.21077 26.9424 8.31912C26.9609 8.42748 26.9537 8.53866 26.9215 8.64375ZM25.2984 9.14062H5.8875L8.72461 19.0723C8.79465 19.3172 8.94258 19.5326 9.146 19.6859C9.34941 19.8392 9.59724 19.922 9.85195 19.9219H21.1148C21.3655 19.9219 21.6096 19.8416 21.8112 19.6927C22.0129 19.5438 22.1615 19.3341 22.2352 19.0945L25.2984 9.14062Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+<!-- menu----------------------------------------------------------- -->
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="./index.html" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Доставка и оплата</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Оптовикам</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Рецепты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>    
+            </header>
+
+            <div class="main">
+                <div class="basket__container">
+
+                    <div class="basket__title_container">
+                        <div class="basket__title title">
+                            <div class="title__line"></div>
+                            <h2>Корзина</h2>
+                        </div>
+                    </div>                    
+
+                    <div class="basket__table">
+                        <h3 class="h3__header">Состав заказа</h3>
+                        
+                        <table>
+                            
+                            <tr class="table__row table__row_head">
+                                <th>Товар</th>
+                                <th>Наименование</th>
+                                <th>Стоимость</th>
+                                <th>Количество</th>
+                                <th>Сумма</th>
+                            </tr>
+
+                            <tr class="table__row">
+                                <td class="table__item_image">
+                                    <img src="./images/card_1.png" alt="basket item">
+                                </td>
+                                <td class="table__item_name">Ёж морской живой</td>
+                                <td class="table__item_price">100 руб.</td>
+                                <td class="table__item_amount">
+                                    <div class="amount__counter">
+                                        <span class="amount__counter_decrease"></span>
+                                        <span>
+                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
+                                        </span>         
+                                        <span class="amount__counter_increase"></span>
+                                    </div>
+                                </td>
+                                <td class="table__item_sum">
+                                    <span>100 руб.</span>
+                                    <span class="table__item_delete">X</span>
+                                </td>
+                            </tr>
+
+                            <tr class="table__row">
+                                <td class="table__item_image">
+                                    <img src="./images/card_1.png" alt="basket item">
+                                </td>
+                                <td class="table__item_name">Ёж морской живой</td>
+                                <td class="table__item_price">100 руб.</td>
+                                <td class="table__item_amount">
+                                    <div class="amount__counter">
+                                        <span class="amount__counter_decrease"></span>
+                                        <span>
+                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
+                                        </span>         
+                                        <span class="amount__counter_increase"></span>
+                                    </div>
+                                </td>
+                                <td class="table__item_sum">
+                                    <span>100 руб.</span>
+                                    <span class="table__item_delete">X</span>
+                                </td>
+                            </tr>
+
+                            <tr class="table__row">
+                                <td class="table__item_image">
+                                    <img src="./images/card_1.png" alt="basket item">
+                                </td>
+                                <td class="table__item_name">Ёж морской живой</td>
+                                <td class="table__item_price">100 руб.</td>
+                                <td class="table__item_amount">
+                                    <div class="amount__counter">
+                                        <span class="amount__counter_decrease"></span>
+                                        <span>
+                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
+                                        </span>         
+                                        <span class="amount__counter_increase"></span>
+                                    </div>
+                                </td>
+                                <td class="table__item_sum">
+                                    <span>100 руб.</span>
+                                    <span class="table__item_delete">X</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="basket__form">
+                        <form action="#" id="basket__order">
+                            <div  class="form_container">
+                                <div class="basket__order_info">
+                                
+                                    <div class="order__userinfo">
+                                        <h3 class="h3__header">Оформление заказа</h3>
+    
+                                        <input type="text" class="inputs order__input" name="order_username" id="order_username" placeholder="Имя">
+                                        <input type="text" class="inputs order__input" name="order_useraddress" id="order_useraddress" placeholder="Адрес">
+                                        <input type="text" class="inputs order__input" name="order_userphone" id="order_userphone" placeholder="Телефон">
+                                    </div>
+                                    
+                                    <div class="order__paymethod">
+                                        <h3 class="h3__header">Способ оплаты</h3>
+    
+                                        <div id="yet_another_some_random_indentation">
+                                            <input class="inputs_radio" type="radio" id="pay__method_card" name="pay__method" value="card" checked />
+                                            <label class="radio_label" for="pay__method_card">Картой</label>
+                                        </div>                                    
+                                        <div>
+                                            <input class="inputs_radio" type="radio" id="pay__method_cash" name="pay__method" value="cash" />
+                                            <label class="radio_label" for="pay__method_cash">При получении</label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="basket__delivery">
+                                    <h3 class="h3__header">Доставка</h3>
+    
+                                    <div class="input_container">
+                                        <input class="inputs_radio" type="radio" id="delivery__method_city" name="delivery__method" value="city" checked />
+                                        <label class="radio_label" for="delivery__method_city">По городу</label>
+                                    </div>                                    
+                                    <div class="input_container">
+                                        <input class="inputs_radio" type="radio" id="delivery__method_countryside" name="delivery__method" value="countryside" />
+                                        <label class="radio_label" for="delivery__method_countryside">За пределы города</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input class="inputs_radio" type="radio" id="delivery__method_self" name="delivery__method" value="self" />
+                                        <label class="radio_label" for="delivery__method_self">Самовывоз</label>
+                                    </div>
+                                </div>
+    
+                                <div class="basket__total">
+                                    <h3 class="h3__header">Итого</h3>
+                                    <div class="basket__total_sum input_container">100 руб.</div>
+
+                                    <div class="basket__total_confident input_container">
+                                        <input type="checkbox" id="checkbox_confident" name="checkbox_confident" checked />
+                                        <label class="checkbox_label" for="checkbox_confident">Я соглашаюсь с Политикой Конфиденциальности</label>
+                                    </div>
+
+                                    <div class="confirm_order input_container">
+                                        <input type="submit" value="Оформить заказ" class="submit_btn">
+                                    </div>
+
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+
+                </div>  
+            </div>
+
+            <footer class="footer">
+                <div class="footer__container">
+    
+                    <div class="footer__contacts">
+    
+                        <div class="footer__address contacts">
+                            <div class="footer__line_horizont"></div>
+                            <p>
+                                Проспект Непокорённых 63к13<br>стр3, Санкт-Петербург
+                            </p>
+                        </div>
+    
+                        <div class="footer__logos contacts">
+    
+                            <img class="contacts__img_crab" src="./images/crab_logo.png" alt="логотип">
+    
+                            <div class="contacts__social">
+                                <a href="#">
+                                    <img class="contacts__img_social vk_logo" src="./images/vk-logo.png" alt="vk" class="contacts__social_logos">
+                                </a>
+                                <a href="#">
+                                    <img class="contacts__img_social" src="./images/inst-logo.png" alt="instagram" class="contacts__social_logos">
+                                </a>
+                            </div>
+                            <div class="footer__line__vertical"></div>
+                        </div>
+    
+                        <div class="footer__phones contacts">
+                            <div class="footer__line_horizont"></div>
+                            <p>
+                                +7 (911) 221-65-59<br>
+                                +7 (952) 203-13-37<br>
+                                +7 (952) 542-76-64
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="footer__contacts_small">
+                        <div class="footer__crab_small">
+                            <img class="contacts__img_crab" src="./images/crab_logo.png" alt="логотип">
+                        </div>                        
+                        
+                        <p class="contacts__address_small">
+                            Проспект Непокорённых 63к13 стр3,<br>Санкт-Петербург
+                        </p>
+                        <p class="contacts__numbers_small">
+                            +7 (911) 221-65-59<br>
+                            +7 (952) 203-13-37<br>
+                            +7 (952) 542-76-64
+                        </p>
+                        
+                        <div class="contacts__social">
+                            <a href="#">
+                                <img class="contacts__img_social" src="./images/vk-logo.png" alt="vk" class="contacts__social_logos">
+                            </a>
+                            <a href="#">
+                                <img class="contacts__img_social" src="./images/inst-logo.png" alt="instagram" class="contacts__social_logos">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="footer__callback">
+                        <h4 class="callback__title">Свяжитесь с нами</h4>
+                        <form class="callback__form" action="#" method="#" name="callback_form">
+    
+                            <div class="callback__inputs">
+                                <input class="inputs" type="text" id="callback_name" name="callback_name" placeholder="Имя">
+                                <input class="inputs" type="text" id="callback_phone" name="callback_phone" placeholder="Телефон">
+                            </div>                            
+    
+                            <button class="callback__btn submit_btn" type="submit">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
