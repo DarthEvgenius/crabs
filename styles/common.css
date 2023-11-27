@@ -1,3 +1,4 @@
+/* main circle button styles */
 .circle-btn {
     position: relative;
     width: 230px;
@@ -10,6 +11,13 @@
     transition: color .2s;
     cursor: pointer;
 }
+.circle-btn svg {
+    width: 229px;
+    height: 229px;
+}
+.circle-btn a:hover {
+    color: #fff;
+}
 
 .circle-btn:hover {
     color: #fff;
@@ -20,11 +28,6 @@
 }
 .circle-btn:active .circle-btn__circle {
     stroke-width: 2px;
-}
-
-.circle-btn__circle {
-    width: 229.689px;
-    height: 229.689px;
 }
 
 .circle-btn__btn {
@@ -48,6 +51,32 @@
     position: absolute;
     top: 136px;
     right: 114px;
+}
+
+
+@media (max-width: 992px) {
+    .circle-btn {
+        width: 105px;
+        height: 108px;
+    }
+    .circle-btn svg {
+        width: 105px;
+        height: 109px;
+    }    
+    .circle-btn__svg path {
+        stroke-width: 1.5px;
+    }
+    .circle-btn__btn {
+        font-size: 14px;
+    }
+    .circle-btn__circle {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }    
+    .circle-btn__arrow {
+        width: 47px;
+    }
 }
 
 /* title style ------------------ */
@@ -87,4 +116,58 @@
     padding-right: 30px;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+@media (max-width: 992px) {
+    .title {
+        padding-left: 15px;
+    }
+    .title h2 {
+        font-size: 32px;
+        padding-right: 15px;
+    }
+    .title__line {
+        width: calc(100% - 136px);
+    }
+    .popular__title {
+        margin-bottom: 20px;
+    }
+}
+
+/* carousel styles ----------- */
+
+.carousel {
+    width: 1340px;
+}
+
+.carousel__gallery {
+    width: 1340px;  
+    overflow: hidden;
+}
+
+.carousel__gallery ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.carousel__gallery img {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.carousel__img {
+    display: block;
+}
+
+.carousel__slider {
+    display: flex;
+}
+
+.slider__line {
+    align-self: center;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.slider__line_position {
+    width: 80px;
+    height: 1px;
+    background: #E03926;    
 }
