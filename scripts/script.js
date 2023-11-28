@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const closeMenu = document.querySelector('.menu_close');
     
     if (burger) {
-        console.log(burger);
         closeMenu.addEventListener('click', ()=> {
             menu.classList.remove('active');
         });

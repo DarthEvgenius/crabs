@@ -2,6 +2,7 @@
 @import url('./common.css');
 @import url('./basket.css');
 @import url('./recipe.css');
+@import url('./catalog.css');
 
 html, body {
     height: 100%;
