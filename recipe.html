@@ -14,8 +14,8 @@
         <title>Crabster</title>
     </head>
     <body>
-        <div class="wrapper basket__wrapper">
-            <header class="header basket__header">
+        <div class="wrapper recipepage__wrapper">
+            <header class="header recipepage__header">
                 <div class="header__container">
                     
                     <div class="header__tools_small">
@@ -105,7 +105,7 @@
                                 <a href="" class="menu__link">Оптовикам</a>
                             </li>
                             <li class="menu__item">
-                                <a href="./recipe.html" class="menu__link">Рецепты</a>
+                                <a href="" class="menu__link">Рецепты</a>
                             </li>
                             <li class="menu__item">
                                 <a href="" class="menu__link">Контакты</a>
@@ -133,230 +133,102 @@
                 </div>    
             </header>
 
-            <div class="main">
-                <div class="basket__container">
-
-                    <div class="basket__title_container">
-                        <div class="basket__title title">
+            <div class="main recipepage__main">
+                <div class="recipepage__container">
+                    
+                    <div class="recipepage__title_container">
+                        <div class="recipe__title recipepage__title title">
                             <div class="title__line"></div>
-                            <h2>Корзина</h2>
+                            <h2>Рецепты</h2>
                         </div>
-                    </div>                    
+                    </div>
 
-                    <div class="basket__table">
-                        <h3 class="h3__header">Состав заказа</h3>
+                    <div class="recipepage__recipe">
+                        <div class="recipepage__recipe_head">
+
+                            <div class="recipepage__recipe_name">
+                                <div class="h3__header">Тигровые креветки</div>
+                            </div>
+
+                            <div class="recipepage__recipe_image">
+                                <img src="./images/recipe_image.png" alt="фото рецепта" class="recipepage__recipe_img">
+                            </div>
+
                         
-                        <table>
-                            
-                            <tr class="table__row table__row_head">
-                                <th>Товар</th>
-                                <th>Наименование</th>
-                                <th>Стоимость</th>
-                                <th>Количество</th>
-                                <th>Сумма</th>
-                            </tr>
 
-                            <tr class="table__row">
-
-                                <td class="table__item_image">
-                                    <img src="./images/card_1.png" alt="basket item">
-                                </td>
-
-                                <td class="table__item_info-small">
-                                    <div class="small_container">
-
-                                        <div class="small__name">Ёж морской живой</div>
-
-                                        <div class="small__price">100 руб.</div>
-
-                                        <div class="small__amount">
-                                            <div class="amount__counter">
-                                                <span class="amount__counter_decrease"></span>
-                                                <span>
-                                                    <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                                </span>         
-                                                <span class="amount__counter_increase"></span>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-
-                                    <div class="small__sum">100 руб.</div>
-
-                                    <div class="small__delete">x</div>
-                                </td>
-                                
-                                <td class="table__item_name">Ёж морской живой</td>
-
-                                <td class="table__item_price">100 руб.</td>
-
-                                <td class="table__item_amount">
-                                    <div class="amount__counter">
-                                        <span class="amount__counter_decrease"></span>
-                                        <span>
-                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                        </span>         
-                                        <span class="amount__counter_increase"></span>
-                                    </div>
-                                </td>
-
-                                <td class="table__item_sum">
-                                    <span>100 руб.</span>
-                                    <span class="table__item_delete">x</span>
-                                </td>
-
-                            </tr>
-
-                            <tr class="table__row">
-                                <td class="table__item_image">
-                                    <img src="./images/card_1.png" alt="basket item">
-                                </td>
-                                <td class="table__item_info-small">
-                                    <div class="small_container">
-
-                                        <div class="small__name">Ёж морской живой</div>
-
-                                        <div class="small__price">100 руб.</div>
-
-                                        <div class="small__amount">
-                                            <div class="amount__counter">
-                                                <span class="amount__counter_decrease"></span>
-                                                <span>
-                                                    <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                                </span>         
-                                                <span class="amount__counter_increase"></span>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-
-                                    <div class="small__sum">100 руб.</div>
-
-                                    <div class="small__delete">x</div>
-                                </td>
-                                <td class="table__item_name">Ёж морской живой</td>
-                                <td class="table__item_price">100 руб.</td>
-                                <td class="table__item_amount">
-                                    <div class="amount__counter">
-                                        <span class="amount__counter_decrease"></span>
-                                        <span>
-                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                        </span>         
-                                        <span class="amount__counter_increase"></span>
-                                    </div>
-                                </td>
-                                <td class="table__item_sum">
-                                    <span>100 руб.</span>
-                                    <span class="table__item_delete">x</span>
-                                </td>
-                            </tr>
-
-                            <tr class="table__row">
-                                <td class="table__item_image">
-                                    <img src="./images/card_1.png" alt="basket item">
-                                </td>
-                                <td class="table__item_info-small">
-                                    <div class="small_container">
-
-                                        <div class="small__name">Ёж морской живой</div>
-
-                                        <div class="small__price">100 руб.</div>
-
-                                        <div class="small__amount">
-                                            <div class="amount__counter">
-                                                <span class="amount__counter_decrease"></span>
-                                                <span>
-                                                    <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                                </span>         
-                                                <span class="amount__counter_increase"></span>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-
-                                    <div class="small__sum">100 руб.</div>
-
-                                    <div class="small__delete">x</div>
-                                </td>
-                                <td class="table__item_name">Ёж морской живой</td>
-                                <td class="table__item_price">100 руб.</td>
-                                <td class="table__item_amount">
-                                    <div class="amount__counter">
-                                        <span class="amount__counter_decrease"></span>
-                                        <span>
-                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
-                                        </span>         
-                                        <span class="amount__counter_increase"></span>
-                                    </div>
-                                </td>
-                                <td class="table__item_sum">
-                                    <span>100 руб.</span>
-                                    <span class="table__item_delete">x</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="basket__form">
-                        <form action="#" id="basket__order">
-                            <div  class="form_container">
-                                <div class="basket__order_info">
-                                
-                                    <div class="order__userinfo">
-                                        <h3 class="h3__header">Оформление заказа</h3>
-    
-                                        <input type="text" class="inputs order__input" name="order_username" id="order_username" placeholder="Имя">
-                                        <input type="text" class="inputs order__input" name="order_useraddress" id="order_useraddress" placeholder="Адрес">
-                                        <input type="text" class="inputs order__input" name="order_userphone" id="order_userphone" placeholder="Телефон">
-                                    </div>
+                            <div class="recipepage__recipe_ingredients">
+                                <h5>Вам понадобиться:</h5>
+                                <ul class="ingredients_list">
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Тигровые креветки (хвосты) 
+                                            замороженные</div>
+                                        <div class="ingredient_amount">1 кг</div>
+                                    </li>
                                     
-                                    <div class="order__paymethod">
-                                        <h3 class="h3__header">Способ оплаты</h3>
-    
-                                        <div id="yet_another_suddenly_indentation">
-                                            <input class="inputs_radio" type="radio" id="pay__method_card" name="pay__method" value="card" checked />
-                                            <label class="radio_label" for="pay__method_card">Картой</label>
-                                        </div>                                    
-                                        <div>
-                                            <input class="inputs_radio" type="radio" id="pay__method_cash" name="pay__method" value="cash" />
-                                            <label class="radio_label" for="pay__method_cash">При получении</label>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="basket__delivery">
-                                    <h3 class="h3__header">Доставка</h3>
-    
-                                    <div class="input_container">
-                                        <input class="inputs_radio" type="radio" id="delivery__method_city" name="delivery__method" value="city" checked />
-                                        <label class="radio_label" for="delivery__method_city">По городу</label>
-                                    </div>                                    
-                                    <div class="input_container">
-                                        <input class="inputs_radio" type="radio" id="delivery__method_countryside" name="delivery__method" value="countryside" />
-                                        <label class="radio_label" for="delivery__method_countryside">За пределы города</label>
-                                    </div>
-                                    <div class="input_container">
-                                        <input class="inputs_radio" type="radio" id="delivery__method_self" name="delivery__method" value="self" />
-                                        <label class="radio_label" for="delivery__method_self">Самовывоз</label>
-                                    </div>
-                                </div>
-    
-                                <div class="basket__total">
-                                    <h3 class="h3__header">Итого</h3>
-                                    <div class="basket__total_sum input_container">100 руб.</div>
-
-                                    <div class="basket__total_confident input_container">
-                                        <input type="checkbox" id="checkbox_confident" name="checkbox_confident" checked />
-                                        <label class="checkbox_label" for="checkbox_confident">Я соглашаюсь с Политикой<br>Конфиденциальности</label>
-                                    </div>
-
-                                    <div class="confirm_order input_container">
-                                        <input type="submit" value="Оформить заказ" class="submit_btn">
-                                    </div>
-
-                                </div>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Чеснок</div>
+                                        <div class="ingredient_amount">4 зубчика</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Соевый соус</div>
+                                        <div class="ingredient_amount">100 мл</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Масло оливковое</div>
+                                        <div class="ingredient_amount">50 мл</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Масло сливочное</div>
+                                        <div class="ingredient_amount">50 г</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Перец красный</div>
+                                        <div class="ingredient_amount">по вкусу</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Перец черный</div>
+                                        <div class="ingredient_amount">по вкусу</div>
+                                    </li>
+                                    
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Укроп сушеный</div>
+                                        <div class="ingredient_amount">по вкусу</div>
+                                    </li>
+                                    <li class="ingredients_item">
+                                        <div class="ingredient_name">Соль</div>
+                                        <div class="ingredient_amount">по вкусу</div>
+                                    </li>
+                                </ul>
                             </div>                            
-                        </form>
-                    </div>
+                        </div>
 
-                </div>  
+                        <div class="recipepage__recipe_body">
+                            <div class="recipepage__recipe_howto">Как приготовить:</div>
+                            <ol class="recipe_steps">
+                                <li class="recipe_step">
+                                    Сковороду сильно разогреть на максимальном огне (в течение 5 минут). Добавить оливковое масло.
+                                </li>
+
+                                <li class="recipe_step">
+                                    Выложить на сковороду креветки и жарить на большом огне, постоянно помешивая. Через минуту добавить кусочки сливочного масла.
+                                </li>
+
+                                <li class="recipe_step">
+                                    Когда масло растает, добавить соевый соус. Продолжать готовить креветки на максимальном огне, это важно. Когда соус закипит, добавить соль, свежемолотый черный и красный перец, сушеный укроп (можно использовать другую сушеную зелень).
+                                </li>
+
+                                <li class="recipe_step">
+                                    Общее время жарки хвостов тигровых креветок этого размера - 5 минут. В самом конце, когда креветки будут готовы, добавить измельчённый чеснок - натёртый на тёрке или пропущенный через пресс. Не перемешивать. Сразу снять сковороду с огня.
+                                </li>
+
+                                <li class="recipe_step">
+                                    Дать креветкам пару минут остыть, затем перемешать, чтобы насытить их ароматом чеснока. И подавать жареные креветки к столу. Приятного аппетита!
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
 
             <footer class="footer">

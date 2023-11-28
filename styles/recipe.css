@@ -1,0 +1,195 @@
+.recipepage__main {
+    padding-bottom: 160px;
+}
+.header.recipepage__header {
+    background: none;
+}
+.recipepage__title_container {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+/* На главной странице уже есть стилизация этого заголовка */
+.recipe__title.recipepage__title {
+    margin-bottom: 0;
+}
+
+.recipepage__recipe_head {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        'image name'
+        'image ingredients';
+    grid-template-rows: 85px 1fr;
+    grid-template-columns: 1fr 390px;
+    margin-bottom: 100px;
+}
+.recipepage__recipe_image {
+    width: 750px;
+    height: 516px;
+    grid-area: image;
+}
+.recipepage__recipe_img {
+    object-fit: contain;
+}
+.recipepage__recipe_name {
+    grid-area: name;
+    padding-bottom: 56px;
+}
+.recipepage__recipe_ingredients {
+    grid-area: ingredients;
+    width: 388px;
+    height: 432px;
+    border: 1px solid #fff;
+    padding-left: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.recipepage__recipe_ingredients h5 {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 25px;
+}
+.ingredients_list {
+    padding-left: 0;
+    margin-bottom: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+}
+.ingredients_item {
+    display: flex;
+    justify-content: space-between;    
+    padding-bottom: 10px;
+}
+.ingredients_item:last-child {
+    padding-bottom: 0;
+}
+.ingredients_item .ingredient_name {
+    max-width: 200px;
+}
+.recipepage__recipe_howto {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+/* Ordered List styles */
+ol {
+	counter-reset: num;
+	padding-left: 79px;
+    margin: 0;
+}
+.recipe_step {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%; 
+    height: 175px;
+    position: relative;   
+    display: flex;
+    align-items: center; 
+}
+.recipe_step::before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+	position: absolute;
+    top: 40%;
+	left: -70px;
+    color: #E03926;    
+    font-size: 64px;
+    font-weight: 700;
+}
+.recipe_step::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 70px;
+    background: #FFF;
+    position: absolute;
+    left: -50px;
+    top: 75%;
+}
+.recipe_step:last-child::after {
+    display: none;
+} 
+
+@media (max-width: 992px) {
+    body .recipepage__wrapper {
+        background: 
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.9) 100%), url('../images/main_bg.jfif') repeat-y;
+        background-position: 0 0;
+    }
+    .recipepage__main {
+        padding-bottom: 100px;
+    }
+    .recipepage__title_container {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .recipepage__recipe_head {
+        grid-template-areas:
+            'name'
+            'image'
+            'ingredients';
+        grid-template-rows: auto auto auto;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+    .recipepage__recipe_name {
+        padding-bottom: 0;
+    }
+    .recipepage__recipe_image {
+        width: calc(100vw - 30px);
+        height: auto;
+        overflow: hidden;
+
+    }
+    .recipepage__recipe_img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+    
+    .recipepage__recipe_ingredients {
+        width: calc(100vw - 30px);
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .recipepage__recipe_ingredients h5 {
+        font-size: 17px;
+    }
+    .ingredients_list {
+        font-size: 11px;
+    }
+    .recipepage__recipe_howto {
+        font-size: 20px;
+        padding-bottom: 36px;
+    }
+
+    ol {
+        padding-left: 43px;
+    }
+    .recipe_step {
+        font-size: 9px;
+        height: 85px;
+    }
+    .recipe_step::before {
+        font-size: 33px;
+        left: -35px;
+    }
+    .recipe_step::after {
+        height: 36px;
+        left: -25px;
+    }
+}
