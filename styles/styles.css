@@ -233,7 +233,7 @@ body {
         padding-bottom: 10px;
     }
     .menu__item:last-child {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
     .header__tools {
         display: none;
@@ -241,7 +241,7 @@ body {
     .header__tools_small {
         display: flex;
         justify-content: space-between;
-        margin: 10px 15px 0;
+        margin: 10px 0 0;
         padding-bottom: 27px;
     }
     .menu_burger {
