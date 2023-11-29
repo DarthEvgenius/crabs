@@ -1,8 +1,17 @@
 .recepies__main {
     margin-bottom: 180px;
 }
+.recepies__main .recipe__button {
+    display: none;
+}
 @media (max-width: 992px) {
     .recipie__title .title__line {
         width: calc(100% - 150px);
+    }
+    .recepies__main {
+        margin-bottom: 0px;
+    }
+    .recepies__main .recipe__button {
+        display: block;
     }
 }
