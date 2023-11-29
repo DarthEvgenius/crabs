@@ -12,6 +12,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
             menu.classList.add('active');             
         });
     }
+
+
+    // phone numbers
+    const phoneBtn = document.querySelector('#phone');
+    const phones = document.querySelector('.tools__numbers');
+    const closePhones = document.querySelector('#phones_remove');    
+
+    if (phoneBtn) {
+        phoneBtn.addEventListener('click', ()=> {
+            phones.classList.add('active');
+            
+            closePhones.addEventListener('click', ()=> {
+                phones.classList.remove('active');
+            });
+        })        
+    }
+    
+    
+    
        
     // filter menu
     const filterBtn = document.querySelector('.catalog__filter_open');
@@ -19,8 +38,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const closeFilter = document.querySelector('.filter__close_btn');
 
     if (filterBtn) {
-        
-        
         closeFilter.addEventListener('click', ()=> {
             filter.classList.remove('active');
         });
