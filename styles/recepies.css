@@ -1,0 +1,8 @@
+.recepies__main {
+    margin-bottom: 180px;
+}
+@media (max-width: 992px) {
+    .recipie__title .title__line {
+        width: calc(100% - 150px);
+    }
+}

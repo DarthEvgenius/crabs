@@ -4,6 +4,7 @@
 @import url('./recipe.css');
 @import url('./catalog.css');
 @import url('./shop_card.css');
+@import url('./recepies.css');
 /* Стили для текстовых страниц */
 @import url('./delivery.css');
 @import url('./opt.css');
@@ -1011,3 +1012,4 @@ body {
         margin-bottom: 39px;
     }
 }
+
