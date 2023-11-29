@@ -82,7 +82,7 @@
 }
 
 /* Ordered List styles */
-ol {
+ol.recipe_steps {
 	counter-reset: num;
 	padding-left: 79px;
     margin: 0;
@@ -177,7 +177,7 @@ ol {
         padding-bottom: 36px;
     }
 
-    ol {
+    ol.recipe_steps {
         padding-left: 43px;
     }
     .recipe_step {
