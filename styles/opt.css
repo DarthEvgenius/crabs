@@ -1,0 +1,30 @@
+.opt__title .title__line {
+    width: calc(100% - 370px);
+}
+@media (max-width: 992px) {
+    .opt__title .title__line {
+        width: calc(100% - 185px);
+    }
+}
+
+/* confident page styles */
+.confident__title .title__line {
+    width: calc(100% - 970px);
+}
+.confident__header {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 0;
+}
+
+pre {
+    white-space: wrap;
+}
+@media (max-width: 992px) {
+    .confident__title .title__line {
+        width: calc(100% - 490px);
+    }
+}

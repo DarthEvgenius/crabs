@@ -1,0 +1,360 @@
+/* Два селектора для увеличения значимости стиля */
+body .basket__wrapper {
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.9) 95%),
+   url('../images/main_bg.jfif') repeat-y;
+   background-position: 0 0;
+   background-size: 100% auto;
+}
+/* Два селектора для увеличения значимости стиля */
+.wrapper .basket__header {
+    background: none;
+}
+.basket__title_container {
+    padding-top: 146px;
+    padding-bottom: 58px;
+}
+
+.basket__title .title__line {
+    width: calc(100% - 297px);
+}
+.basket__title {
+    position: relative;
+}
+
+.basket__table {
+    margin-bottom: 80px;
+}
+.basket__table .h3__header {
+    padding-left: 32px;
+    padding-bottom: 70px;
+}
+.basket__table table {
+    width: 100%;
+}
+.table__row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+    position: relative;
+}
+.table__row_head th{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.table__row td {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 170%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.table__item_info-small {
+    display: none;
+}
+.table__item_image {
+    width: 160px;
+    height: 160px;
+    overflow: hidden
+}
+.table__item_image img {
+    width: 100%;
+    object-fit: cover;
+}
+.amount__counter {
+    width: 170px;
+    height: 40px;
+    border: 1px solid #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.table__item_amount span {
+    width: 55px;
+}
+.amount__counter_input {
+    width: 55px;
+    height: 30px;
+    padding: 10px;
+    background: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.40);
+    border-right: 1px solid rgba(255, 255, 255, 0.40);
+    color: #fff;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.amount__counter_decrease,
+.amount__counter_increase {
+    height: 100%;
+    position: relative;
+}
+.amount__counter_decrease:hover,
+.amount__counter_increase:hover {
+    cursor: pointer;
+}
+.amount__counter_decrease::after,
+.amount__counter_increase::after {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 1px;
+    background: #E03926;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.amount__counter_increase::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 1px;
+    background: #E03926;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: rotate(90deg);
+}
+.table__item_sum {
+    position: relative;
+}
+.table__item_delete {
+    position: absolute;
+    right: 0;
+    user-select: none;
+}
+.table__item_delete:hover {
+    cursor: pointer;
+}
+
+.form_container {
+    width: 100%;
+    display: flex;
+    padding-top: 61px;
+    padding-bottom: 61px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #FFF;
+    margin-bottom: 160px;
+}
+
+.basket__form h3 {
+    margin-bottom: 40px;
+}
+.basket__order_info {
+    margin-right: 114px;
+}
+.basket__delivery {
+    margin-right: 101px;
+}
+.order__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.input_container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    white-space: nowrap;
+}
+#yet_another_suddenly_indentation {
+    margin-bottom: 40px;
+}
+.basket__total_sum {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 600;
+    vertical-align: bottom;
+}
+#checkbox_confident {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-right: 30px;
+}
+#checkbox_confident:checked {
+    background: url('../images/checkbox.svg');
+    background-position: 2px 2px;
+}
+.checkbox_label {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    cursor: pointer;
+    max-width: 200px;
+    white-space: normal;
+}
+.confirm_order .submit_btn {
+    padding: 20px 97px;
+}
+
+@media (max-width: 992px) {
+    body .basket__wrapper {
+        background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%,rgba(0, 0, 0, 0.7) 10%,rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.9) 95%),
+   url('../images/main_bg.jfif') repeat-y;
+    }
+    .basket__table {
+        margin-bottom: 60px;
+    }
+    .basket__title_container {
+        padding-top: 100px;
+        padding-bottom: 58px;
+    }
+    .basket__title .title__line {
+        width: calc(100% - 160px);
+    }
+    .basket__table .h3__header,
+    .basket__table .table__row_head,   
+    .table__item_price,
+    .table__item_amount,
+    .table__item_name,
+    .table__item_sum {
+        display: none;
+    }
+    .table__item_info-small {
+        display: block;
+        padding-left: 37px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 37px;
+    }
+    .table__row td {
+        font-size: 9px;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .table__item_image {
+        width: 80px;
+        height: 80px;   
+    }
+    .table__item_image img {
+        width: 80px;
+        height: 80px;
+    }
+    .small_container {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    .table__item_info-small .small__name {
+        padding-bottom: 10px;
+    }
+    .table__item_info-small .small__price {
+        padding-bottom: 10px;
+    }    
+    .table__item_info-small .amount__counter {
+        width: 68px;
+        height: 16px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        justify-content: center;
+        margin: 0;
+    }
+    .small__amount span {
+        width: 21px;
+    }
+    .small__amount .amount__counter_input {
+        width: 21px;
+        height: 12px;
+        font-size: 7px;
+        padding: 2px;
+    }
+    .amount__counter_decrease::after,
+    .amount__counter_increase::after {
+        width: 7px;
+    }
+    .amount__counter_increase::before {
+        width: 7px;
+    }
+    .table__item_sum {
+        left: -30px;
+    }
+
+    .basket__form .h3__header {
+        font-size: 14px;
+    }
+    .form_container {
+        flex-direction: column;
+        margin: auto;
+        max-width: 450px;
+        padding-left: 21px;
+        padding-top: 35px;
+        padding-right: 21px;
+        padding-bottom: 30px;
+        margin-bottom: 100px;
+    }
+    .basket__order_info {
+        margin-right: 0;
+    }
+    .order__userinfo {
+        margin-bottom: 50px;
+    }
+    .order__input {
+        margin-bottom: 56px;
+    }
+    .order__input:last-child {
+        margin-bottom: 0;
+    }
+    .order__paymethod {
+        margin-bottom: 50px;
+    }
+    #yet_another_suddenly_indentation {
+        margin-bottom: 20px;
+    }
+    .input_container {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .input_container:last-child {
+        padding-bottom: 0;
+    }
+    .basket__delivery {
+        margin-bottom: 50px;
+    }
+    .basket__total .h3__header {
+        display: inline-block;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        padding-right: 56px;
+    }
+    .basket__total .basket__total_sum{
+        display: inline-block;
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    #checkbox_confident {
+        width: 21px;
+        height: 21px;
+    }
+    #checkbox_confident:checked {
+        background-position: -2px -2px;
+    }
+    .checkbox_label {
+        font-size: 7px;
+        vertical-align: top;
+    }
+    .confirm_order {
+        text-align: left;
+    }
+    .confirm_order .submit_btn { 
+        padding: 17px 0;       
+        width: 100%;
+    }
+}

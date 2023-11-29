@@ -1,0 +1,50 @@
+/* Стили для текстовых страниц .textpage*/
+.textpage__body {
+    padding-bottom: 221px;
+}
+.delivery__title .title__line {
+    width: calc(100% - 590px);
+}
+.textpage__body .h3__header {
+    padding-left: 30px;
+    padding-right: 219px;
+}
+.textpage__body .row {
+    margin-bottom: 110px;
+}
+.textpage__body .textpage__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+}
+.textpage__text_text {
+    margin-bottom: 0;
+}
+.textpage__body li {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+@media (max-width: 992px) {
+    .delivery__title .title__line {
+        width: calc(100% - 295px);
+    }
+    .textpage__title .title__line::before {
+        left: 18px;
+    }
+    .textpage__body .h3__header {
+        padding-left: 0px;
+        padding-right: 40px;
+    }
+    .textpage__body .row {
+        margin-bottom: 40px;
+    }
+    .textpage__body .textpage__text {
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 170%;
+    }
+    .textpage__body li {
+        margin-left: 12px;
+    }
+}
