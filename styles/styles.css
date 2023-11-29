@@ -75,6 +75,7 @@ body {
 }
 /* поповер с телефонами */
 .tools__numbers {
+    visibility: visible;
     width: 294px;
     height: 173px;
     border: 1.5px solid #FFF;
