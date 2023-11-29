@@ -1,0 +1,116 @@
+body {
+    background: #000;
+}
+.shopcard {
+    padding-top: 44px;
+    padding-bottom: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: -70px;
+    margin-right: -70px;
+}
+.shopcard__head {
+    padding-bottom: 43px;
+}
+.shopcard__head_close {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    user-select: none;
+    padding: 0;
+}
+.shopcard__head_close span:hover {
+    cursor: pointer;
+}
+.shopcard__head_title {
+    color: #FFF;    
+    font-family: Mulish;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;     
+}
+.shopcard__body {
+    justify-content: space-between;
+}
+.shopcard__body_content {
+    max-width: 640px;
+    height: 690px;  
+    border: 1px solid #FFF;  
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.shopcard__body_title {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 130%;
+    padding-left: 32px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+.shopcard__body_image {
+    max-width: 638px;
+    max-height: 690px;
+}
+.shopcard__body_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shopcard__body_info {
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    flex: 1 1 auto;
+}
+.shopcard__body_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 170%;
+}
+.shopcard__body_list {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 170%;   
+}
+.shopcard__body_price {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.shopcard__body_price-text {
+    color: #FFF;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 170%;
+}
+.shopcard__body_price-text span {
+    font-size: 20px;
+}
+.shopcard__body_price .card__btn {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 170px;
+}
+.shopcard__body_price-counter .amount__counter {
+    width: 170px;
+    height: 40px;    
+}
+.shopcard__body_price-counter span {
+    width: 55px;
+}

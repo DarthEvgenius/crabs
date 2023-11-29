@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./styles/styles.css" rel="stylesheet">
+
+        <title>Crabster</title>
+    </head>
+    <body>
+
+        <div class="shopcard__container">
+
+            <div class="shopcard">
+
+                <div class="shopcard__head row">
+                    <div class="shopcard__head_title col-6">Морской ёж</div>
+                    <div class="shopcard__head_close col-6"><span>X</span></div>
+                </div>
+
+                <div class="shopcard__body row">
+
+                    <div class="shopcard__body_image col-6 mr-5">
+                        <img src="./images/card_1.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="shopcard__body_content col-6">
+
+                        <div class="shopcard__body_title">Ёж морской живой</div>
+
+                        <div class="shopcard__body_info">
+                            <p class="shopcard__body_text">Являются традиционным блюдом жителей побережий Средиземного моря, Северной и Южной Америки, Новой Зеландии и Японии. Высоко ценятся их молоки и особенно икра, в которой содержится до 34,9 % жиров и 19,2—20,3 % белков.</p>
+                            <p class="shopcard__body_list">Страна: </p>
+                            <p class="shopcard__body_list">Производитель: </p>
+                            <p class="shopcard__body_list">Фасовка:</p>
+                            <p class="shopcard__body_list">Упаковка:</p>
+                        </div>
+                        <div class="shopcard__body_price">
+
+                            <div class="shopcard__body_price-text">100<span> руб. за шт.</span></div>
+
+                            <div class="shopcard__body_price-counter">
+                                <div class="small__amount">
+                                    <div class="amount__counter">
+                                        <span class="amount__counter_decrease"></span>
+                                        <span>
+                                            <input class="amount__counter_input" type="number" min="0" max="999" value="1">
+                                        </span>         
+                                        <span class="amount__counter_increase"></span>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="shopcard__body_price-btn"><button class="card__btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                    <path d="M7.34375 17.5642C7.34375 17.7805 7.2796 17.992 7.15942 18.1719C7.03924 18.3517 6.86842 18.4919 6.66856 18.5747C6.4687 18.6575 6.24879 18.6791 6.03662 18.6369C5.82445 18.5947 5.62957 18.4906 5.4766 18.3376C5.32364 18.1846 5.21947 17.9898 5.17727 17.7776C5.13506 17.5654 5.15672 17.3455 5.23951 17.1456C5.32229 16.9458 5.46248 16.775 5.64234 16.6548C5.82221 16.5346 6.03368 16.4705 6.25 16.4705C6.54008 16.4705 6.81828 16.5857 7.0234 16.7908C7.22852 16.9959 7.34375 17.2741 7.34375 17.5642ZM14.375 16.4705C14.1587 16.4705 13.9472 16.5346 13.7673 16.6548C13.5875 16.775 13.4473 16.9458 13.3645 17.1456C13.2817 17.3455 13.2601 17.5654 13.3023 17.7776C13.3445 17.9898 13.4486 18.1846 13.6016 18.3376C13.7546 18.4906 13.9495 18.5947 14.1616 18.6369C14.3738 18.6791 14.5937 18.6575 14.7936 18.5747C14.9934 18.4919 15.1642 18.3517 15.2844 18.1719C15.4046 17.992 15.4688 17.7805 15.4688 17.5642C15.4688 17.2741 15.3535 16.9959 15.1484 16.7908C14.9433 16.5857 14.6651 16.4705 14.375 16.4705ZM17.9477 6.45171L15.7195 13.6947C15.6127 14.0464 15.3955 14.3543 15.1 14.5728C14.8045 14.7914 14.4464 14.9089 14.0789 14.908H6.56797C6.19426 14.9066 5.83108 14.784 5.53299 14.5586C5.2349 14.3332 5.01799 14.0172 4.91484 13.658L2.08984 3.77124C2.08048 3.73851 2.06069 3.70973 2.03347 3.68929C2.00625 3.66884 1.9731 3.65784 1.93906 3.65796H0.625C0.50068 3.65796 0.381451 3.60857 0.293544 3.52067C0.205636 3.43276 0.15625 3.31353 0.15625 3.18921C0.15625 3.06489 0.205636 2.94566 0.293544 2.85775C0.381451 2.76984 0.50068 2.72046 0.625 2.72046H1.93906C2.17653 2.7211 2.40738 2.79873 2.59699 2.94171C2.78659 3.08468 2.92471 3.28529 2.99062 3.51343L3.65703 5.84546H17.5C17.5733 5.84553 17.6455 5.86279 17.7109 5.89584C17.7763 5.92889 17.8331 5.97681 17.8766 6.03577C17.9201 6.09472 17.9492 6.16305 17.9616 6.23529C17.9739 6.30753 17.9692 6.38165 17.9477 6.45171ZM16.8656 6.78296H3.925L5.81641 13.4041C5.8631 13.5673 5.96172 13.7109 6.09733 13.8131C6.23294 13.9153 6.39816 13.9706 6.56797 13.9705H14.0766C14.2437 13.9705 14.4064 13.9169 14.5408 13.8177C14.6753 13.7184 14.7743 13.5786 14.8234 13.4189L16.8656 6.78296Z" fill="black"/>
+                                </svg>Купить
+                            </button></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
