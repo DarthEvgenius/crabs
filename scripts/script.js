@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
         })        
     }
     
-    
-    
        
     // filter menu
     const filterBtn = document.querySelector('.catalog__filter_open');
@@ -45,4 +43,18 @@ document.addEventListener('DOMContentLoaded', ()=> {
             filter.classList.add('active');
         });
     }
+
+
+    // basket's counters
+    document.addEventListener('click', (event)=> {
+        const target = event.target;
+        if (target.classList.value === 'amount__counter_decrease') {
+            const input = target.nextElementSibling.firstElementChild;
+            input.value = +input.value - 1;            
+        }
+        if (target.classList.value === 'amount__counter_increase') {            
+            const input = target.previousElementSibling.firstElementChild;
+            input.value = +input.value + 1; 
+        }      
+    });
 })
