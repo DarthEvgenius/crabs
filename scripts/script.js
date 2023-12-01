@@ -50,7 +50,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
         const target = event.target;
         if (target.classList.value === 'amount__counter_decrease') {
             const input = target.nextElementSibling.firstElementChild;
-            input.value = +input.value - 1;            
+            if (input.value > 0) {
+                input.value = +input.value - 1;
+            }
         }
         if (target.classList.value === 'amount__counter_increase') {            
             const input = target.previousElementSibling.firstElementChild;
