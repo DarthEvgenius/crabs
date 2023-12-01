@@ -358,3 +358,14 @@ body .basket__wrapper {
         width: 100%;
     }
 }
+
+label[for="checkbox_confident"] {
+    pointer-events: none;
+}
+label[for="checkbox_confident"] a {
+    color: inherit;
+    pointer-events: auto;
+}
+label[for="checkbox_confident"] a:hover {
+    color: #E03926;
+}
