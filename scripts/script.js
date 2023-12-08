@@ -103,7 +103,7 @@ scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
     draggable: true,
-//   dragSize: 80,
+    dragSize: 80,
 },
 
 slidesPerView: 1.5,

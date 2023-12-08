@@ -1077,10 +1077,14 @@ body {
 .popular__swiper .swiper-scrollbar-horizontal {
     background:  rgba(255, 255, 255, 0.40);
     height: 1px;
-    /* width: 500px;
-    margin: 0 auto;
-    position: relative; */
 }
+/* Set width of scrollbar with no functionality bugs */
+.popular__swiper .swiper-scrollbar {
+    width: 600px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 .popular__swiper .swiper-scrollbar-drag {
     background: #E03926;
 }
@@ -1122,8 +1126,4 @@ body {
     .popular__swiper .swiper-slide {
         max-width: 250px;
     }
-    /* .popular__swiper .swiper-scrollbar-horizontal {
-        width: 100%;
-        position: absolute;
-    } */
 }
