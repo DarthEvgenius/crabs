@@ -60,3 +60,119 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }      
     });
 })
+
+
+// Carousels ----------------------------------------------------------------------
+const swiperAbout = new Swiper('.about__swiper_swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+      
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+    slidesPerView: 1.5,
+
+    spaceBetween: 80,
+
+    breakpoints: {
+        320: {
+            spaceBetween: 6,
+        },
+        480: {
+            spaceBetween: 20,
+        },
+        920: {
+            spaceBetween: 40,
+        }
+    },
+});
+
+
+const swiperPopular = new Swiper(".popular__swiper", {
+scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: false,
+    draggable: true,
+//   dragSize: 80,
+},
+
+slidesPerView: 1.5,
+spaceBetween: 10,
+
+breakpoints: {
+    480: {
+        spaceBetween: 20,
+        slidesPerView: 2.5,
+    },
+    480: {
+        spaceBetween: 40,
+        slidesPerView: 2,
+    },
+    920: {
+        spaceBetween:30,
+        slidesPerView: 2.5,
+        // scrollbar: {
+        //     dragSize: 80,
+        // }
+    },
+
+    1120: {
+        spaceBetween: 40,
+        slidesPerView: 3,
+    },
+    
+}
+});
+
+
+//   Slider ---------------------------------------------------------------------
+// get container
+const slider = document.getElementById('slider');
+// get inputs
+const inputMin = document.getElementById('catalog-slider_min');
+const inputMax = document.getElementById('catalog-slider_max');
+
+// only on catalog page with these elements
+if (slider && inputMin && inputMax) {    
+    // init slider
+    noUiSlider.create(slider, {
+        start: [200, 800],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 1000
+        }
+    });
+    
+    // change inputs when slider updated
+    slider.noUiSlider.on('update', function(values, handle) {
+        // values - each time both values [min, max]
+        // handle - which handle is moved (0 for min, 1 for max)
+        let value = values[handle];
+
+        // if max moved
+        if (handle) {
+            inputMax.value = Math.round(value);
+        } else {
+            inputMin.value = Math.round(value);
+        }
+    });
+
+    // change slider if inputs updated
+    inputMin.addEventListener('change', function() {
+        slider.noUiSlider.set([this.value, null]);
+    });
+    inputMax.addEventListener('change', function() {
+        slider.noUiSlider.set([null, this.value]);
+    });
+}
