@@ -153,9 +153,14 @@ body .catalog__wrapper {
     display: flex;
     flex-direction: column;
 }
+.carousel__image-container {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+}
 .catalog__card .carousel__img {
-    width: 390px;
-    height: 460px;
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 33px;
