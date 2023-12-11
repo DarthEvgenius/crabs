@@ -8,13 +8,13 @@
 .recepies__content_images {
     padding-left: 20px;
     position: relative;
-    width: 100%;
+    width: 100%;    
 }
 .recepies__content_images::before {
     content: '';
     display: block;
     width: 1px;
-    height: calc(100% - 23px);
+    height: calc(100% - 40px);
     background-color: rgba(255, 255, 255, 0.50);
     position: absolute;
     left: 0;
@@ -27,20 +27,37 @@
 }
 
 .recepies__content_img {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: calc(100% / 2 - 10px);
     display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.recepies__content_img:nth-child(2n) {
+    float: left;
+    position: relative;
+    height: 300px;
+}
+.recepies__content_img:nth-child(2n + 1) {
+    float: right;
+    height: 300px;
+}
+/* линии между рядами */
+.recepies__content_img:nth-child(2n)::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: calc(200% + 20px);
+    background: rgba(255, 255, 255, 0.50);
+    top: -20px;
 }
 .recepies__content_img:first-of-type {
     display: block;
     width: 100%;
+    height: 100%;
+    max-height: 500px;
     max-width: 100%;
-}
-.recepies__content_img:nth-child(2n) {
-    float: left;
-}
-.recepies__content_img:nth-child(2n + 1) {
-    float: right;
 }
 .recepies__content_img img {
     display: block;
@@ -59,10 +76,36 @@
     .recepies__main .recipe__button {
         display: block;
     }
+    .recepies__content_images {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recepies__content_img:nth-child(2n) {
+        height: 111px;
+    }
+    .recepies__content_img:nth-child(2n + 1) {
+        height: 111px;
+    }
+    .recepies__content_img:first-of-type {
+        width: 100%;
+        height: 100%;
+        max-height: 222px;
+        max-width: 100%;
+        overflow: hidden;
+    }
     .recepies__content_img img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 700px) {
+    .recepies__content_images {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
