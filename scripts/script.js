@@ -80,6 +80,10 @@ const swiperAbout = new Swiper('.about__swiper_swiper', {
       el: '.swiper-scrollbar',
     },
 
+    mousewheel: {
+        sensitivity: 1,
+    },
+
     slidesPerView: 1.5,
 
     spaceBetween: 80,
@@ -108,6 +112,10 @@ scrollbar: {
 
 slidesPerView: 1.5,
 spaceBetween: 10,
+
+mousewheel: {
+    sensitivity: 1,
+},
 
 breakpoints: {
     480: {
