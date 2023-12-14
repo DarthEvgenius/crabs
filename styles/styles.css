@@ -1134,3 +1134,8 @@ body {
         width: 100%;
     }
 }
+
+/* Styles for modals */
+.modal-body {
+    background-color: #000;
+}
