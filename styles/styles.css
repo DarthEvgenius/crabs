@@ -580,7 +580,7 @@ body {
     .card__btn {
         width: 85px;
         height: 20px;
-        font-size: 8px;
+        font-size: max(8px, 1.4vw);
         margin-bottom: 0; 
     }
     .card__btn svg {

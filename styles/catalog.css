@@ -207,7 +207,7 @@ body .catalog__wrapper {
     .catalog__filter_open {
         display: inline-block;
         color: #FFF;
-        font-size: 9px;
+        font-size: max(2.5vw, 1rem);
         font-weight: 600;
         position: relative;
         padding-left: 30px;
@@ -216,8 +216,6 @@ body .catalog__wrapper {
     .catalog__filter_open::before{
         content: url('../images/filter.svg');
         display: inline-block;
-        width: 20px;
-        height: 11.5px;
         margin-right: 10px;
         position: absolute;
         left: 0;
